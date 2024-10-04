@@ -1,3 +1,48 @@
+## Todo List Project
+
+### Description
+This project is a simple todo list application built with Laravel.
+
+### Requirements
+- PHP >= 7.3
+- Composer
+- MySQL (XAMPP)
+
+### Installation Instructions
+
+Step 1: Clone the Repository
+
+1. Open your terminal or command prompt.
+2. Navigate to the directory where you want to clone your project:
+   ```bash
+   cd C:\xampp\htdocs
+3. Clone the repository:
+   git clone https://github.com/arjunappaloeleven/todo-list.git
+Step 2:Install Dependencies
+1. cd todo-list
+2. composer install
+Step 3:Set Up environment variables
+1. Copy the .env.example file to create a new .env file:
+   copy .env.example .env  # Use 'cp' command on macOS/Linux
+2. Genetare the application key:
+   php artisan key:generate
+3. Edit the .env file to set up your database and other environment variables.
+Step 4:Set Up the Database
+1. Create a new database in your XAMPP MySQL via phpMyAdmin (e.g., todo).
+2. Update the .env file with the new database name.
+   DB_DATABASE=todo
+3. Run migrations to create the necessary database tables.
+   php artisan migrate
+Step 5:Start the local server.
+1. Run the Laravel development server.
+   php artisan serve
+2. Access your project in your browser.
+   http://localhost:8000
+License
+This project is licensed under the MIT License.
+Feel free to customize it further based on your project's needs!
+
+   
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
